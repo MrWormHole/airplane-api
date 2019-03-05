@@ -19,7 +19,7 @@ class AirplanesController < ApplicationController
   end
 
   #PUT /airplanes/:id
-  def update
+  def update #[FIXME] high priority get rid of 404 bad requests
     @airplane.update(airplane_params)
     head :no_content
   end
