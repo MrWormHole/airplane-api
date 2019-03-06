@@ -34,7 +34,7 @@ class AirplanesController < ApplicationController
 
   def airplane_params
     # whitelist params
-    params.permit(:specificID, :name)
+    params.permit(:name,:flying_hours)
   end
 
   def set_airplane

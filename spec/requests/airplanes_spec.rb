@@ -53,13 +53,13 @@ RSpec.describe 'AIRPLANE-API', type: :request do
   # Test suite for POST /airplanes
   describe 'POST /airplanes' do
     # valid payload
-    let(:valid_attributes) { { specificID: 1453, name: 'Boeing450' } }
+    let(:valid_attributes) { { name: 'Boeing450',flying_hours:1453 } }
 
     context 'when the request is valid' do
       before { post '/airplanes', params: valid_attributes }
 
       it 'creates a airplane' do
-        expect(json['specificID']).to eq(1453)
+        expect(json['flying_hours']).to eq(1453)
       end
 
       it 'returns status code 201' do
@@ -76,7 +76,7 @@ RSpec.describe 'AIRPLANE-API', type: :request do
 
       it 'returns a validation failure message' do
         expect(response.body)
-            .to match("{\"message\":\"Validation failed: Specificid can't be blank\"}")
+            .to match("{\"message\":\"Validation failed: flying_hours can't be blank\"}")
       end
     end
   end
