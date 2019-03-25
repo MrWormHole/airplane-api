@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_03_04_213323) do
 
   create_table "humen", force: :cascade do |t|
     t.string "name"
+    t.string "job"
     t.bigint "airplane_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

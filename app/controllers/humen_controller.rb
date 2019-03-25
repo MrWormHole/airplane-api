@@ -33,7 +33,7 @@ class HumenController < ApplicationController
   private
 
   def human_params
-    params.permit(:name)
+    params.permit(:name,:job)
   end
 
   def set_airplane
