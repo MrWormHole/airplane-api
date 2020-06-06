@@ -84,7 +84,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
     pg (1.1.4-x64-mingw32)
-    puma (3.12.3)
+    puma (3.12.6)
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -147,7 +147,7 @@ GEM
       tzinfo (>= 1.0.0)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.3)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   ruby
