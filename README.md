@@ -66,7 +66,7 @@ Airplane API Docs
 ```
 ---
 ## DELETE: url/airplanes/:airplane_id/humen/:id
-### Deletes a single engineer’s information by its Id.Required parameters are ID of the airplane and ID of the engineer in URL.
+#### Deletes a single engineer’s information by its Id.Required parameters are ID of the airplane and ID of the engineer in URL.
 ---
 ## PUT: url/airplanes/:airplane_id/humen/:id
 #### Updates a single engineer’s whole information by its Id. To get the better performance use it if you want to change the whole data of the engineer. However you can change a single data of a single engineer too. Required parameter is ID in URL.
